@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - US Reg Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-title">
+      <img src="logo.png" alt="US Reg Support Logo" class="logo">
+      <h1>US Reg Support</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Products/Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-content">
+    <form class="contact-form" id="contactForm">
+      <h2>Contact Us</h2>
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+      <div id="formMessage" style="margin-top:1rem;"></div>
+    </form>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 US Reg Support. All rights reserved.</p>
+  </footer>
+  <script>
+    // Simple client-side form handler (no backend)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('formMessage').textContent =
+        "Thank you for contacting us! We'll get back to you soon.";
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
