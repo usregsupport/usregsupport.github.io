@@ -1,0 +1,19 @@
+---
+import "../styles/main.css";
+---
+<form class="contact-form" name="contact" method="POST" netlify>
+  <h2>Contact Us</h2>
+  <label>
+    Name
+    <input type="text" name="name" required />
+  </label>
+  <label>
+    Email
+    <input type="email" name="email" required />
+  </label>
+  <label>
+    Message
+    <textarea name="message" required></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
